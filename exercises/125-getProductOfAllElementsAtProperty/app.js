@@ -3,7 +3,16 @@ let obj = {
 };
 
 function getProductOfAllElementsAtProperty(obj, key) {
-    // your code here
+  
+    let producto = 1
+    if(!obj[key] || obj[key].length == 0 || !Array.isArray(obj[key]))
+        return 0
+    
+    for (let i of obj[key]) {
+      producto *= i
+     }
+     return producto
+
 }
 let output = getProductOfAllElementsAtProperty(obj, 'key');
 console.log(output); // --> 24

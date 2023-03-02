@@ -1,5 +1,8 @@
 function flipPairs(input){
-    // your code here
+    let r = "";
+    for (let i = 0; i < input.length; i+=2)
+        r += (i+1 < input.length ? input[i+1] : "")+input[i];
+    return r;
 }
 
 let input = 'check out how interesting this problem is, it\'s insanely interesting!';

@@ -1,6 +1,6 @@
 function getStringLength(string) {
-    // your code here
+   
+   return string.lastIndexOf('')
 }
-
-let output = getStringLength('hello');
+let output = getStringLength('hello there');
 console.log(output); // --> 5

@@ -3,7 +3,15 @@ let obj = {
 };
 
 function getSumOfAllElementsAtProperty(obj, key) {
-    // your code here
+    let suma = 0
+    if(!obj[key] || obj[key].length == 0 || !Array.isArray(obj[key]))
+        return 0
+    
+    for (let i of obj[key]) {
+      suma += i
+     }
+     return suma
+
 }
 let output = getSumOfAllElementsAtProperty(obj, 'key');
 console.log(output); // --> 13
